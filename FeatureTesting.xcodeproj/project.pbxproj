@@ -13,7 +13,37 @@
 		D9B2169424AFC407006EDBAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B2169224AFC407006EDBAE /* Main.storyboard */; };
 		D9B2169624AFC410006EDBAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B2169524AFC410006EDBAE /* Assets.xcassets */; };
 		D9B2169924AFC410006EDBAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B2169724AFC410006EDBAE /* LaunchScreen.storyboard */; };
+		D9B216E324B42C3B006EDBAE /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B216E224B42C3B006EDBAE /* KeyboardViewController.swift */; };
+		D9B216E724B42C3B006EDBAE /* CustomKeys.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D9B216E024B42C3B006EDBAE /* CustomKeys.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9B216ED24B42C95006EDBAE /* KeyboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B216EC24B42C95006EDBAE /* KeyboardVC.swift */; };
+		D9B216F124B446C4006EDBAE /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = D9B216EE24B446C4006EDBAE /* bear.png */; };
+		D9B216F224B446C4006EDBAE /* wolf.png in Resources */ = {isa = PBXBuildFile; fileRef = D9B216EF24B446C4006EDBAE /* wolf.png */; };
+		D9B216F324B446C4006EDBAE /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = D9B216F024B446C4006EDBAE /* pig.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9B216E524B42C3B006EDBAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B2168124AFC407006EDBAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9B216DF24B42C3B006EDBAE;
+			remoteInfo = CustomKeys;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9B216EB24B42C3B006EDBAE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D9B216E724B42C3B006EDBAE /* CustomKeys.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D9B2168924AFC407006EDBAE /* FeatureTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,10 +53,24 @@
 		D9B2169324AFC407006EDBAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9B2169524AFC410006EDBAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9B2169824AFC410006EDBAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9B216E024B42C3B006EDBAE /* CustomKeys.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomKeys.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9B216E224B42C3B006EDBAE /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		D9B216E424B42C3B006EDBAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9B216EC24B42C95006EDBAE /* KeyboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardVC.swift; sourceTree = "<group>"; };
+		D9B216EE24B446C4006EDBAE /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
+		D9B216EF24B446C4006EDBAE /* wolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wolf.png; sourceTree = "<group>"; };
+		D9B216F024B446C4006EDBAE /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D9B2168624AFC407006EDBAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B216DD24B42C3B006EDBAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				D9B2168B24AFC407006EDBAE /* FeatureTesting */,
+				D9B216E124B42C3B006EDBAE /* CustomKeys */,
 				D9B2168A24AFC407006EDBAE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				D9B2168924AFC407006EDBAE /* FeatureTesting.app */,
+				D9B216E024B42C3B006EDBAE /* CustomKeys.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,8 +107,21 @@
 				D9B2169224AFC407006EDBAE /* Main.storyboard */,
 				D9B2169524AFC410006EDBAE /* Assets.xcassets */,
 				D9B2169724AFC410006EDBAE /* LaunchScreen.storyboard */,
+				D9B216EC24B42C95006EDBAE /* KeyboardVC.swift */,
 			);
 			path = FeatureTesting;
+			sourceTree = "<group>";
+		};
+		D9B216E124B42C3B006EDBAE /* CustomKeys */ = {
+			isa = PBXGroup;
+			children = (
+				D9B216EE24B446C4006EDBAE /* bear.png */,
+				D9B216F024B446C4006EDBAE /* pig.png */,
+				D9B216EF24B446C4006EDBAE /* wolf.png */,
+				D9B216E224B42C3B006EDBAE /* KeyboardViewController.swift */,
+				D9B216E424B42C3B006EDBAE /* Info.plist */,
+			);
+			path = CustomKeys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,15 +134,34 @@
 				D9B2168524AFC407006EDBAE /* Sources */,
 				D9B2168624AFC407006EDBAE /* Frameworks */,
 				D9B2168724AFC407006EDBAE /* Resources */,
+				D9B216EB24B42C3B006EDBAE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D9B216E624B42C3B006EDBAE /* PBXTargetDependency */,
 			);
 			name = FeatureTesting;
 			productName = DarkMode;
 			productReference = D9B2168924AFC407006EDBAE /* FeatureTesting.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D9B216DF24B42C3B006EDBAE /* CustomKeys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9B216E824B42C3B006EDBAE /* Build configuration list for PBXNativeTarget "CustomKeys" */;
+			buildPhases = (
+				D9B216DC24B42C3B006EDBAE /* Sources */,
+				D9B216DD24B42C3B006EDBAE /* Frameworks */,
+				D9B216DE24B42C3B006EDBAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomKeys;
+			productName = CustomKeys;
+			productReference = D9B216E024B42C3B006EDBAE /* CustomKeys.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +174,9 @@
 				ORGANIZATIONNAME = Dustin;
 				TargetAttributes = {
 					D9B2168824AFC407006EDBAE = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					D9B216DF24B42C3B006EDBAE = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -114,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				D9B2168824AFC407006EDBAE /* FeatureTesting */,
+				D9B216DF24B42C3B006EDBAE /* CustomKeys */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +211,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9B216DE24B42C3B006EDBAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B216F324B446C4006EDBAE /* pig.png in Resources */,
+				D9B216F124B446C4006EDBAE /* bear.png in Resources */,
+				D9B216F224B446C4006EDBAE /* wolf.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +229,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B2169124AFC407006EDBAE /* ViewController.swift in Sources */,
+				D9B216ED24B42C95006EDBAE /* KeyboardVC.swift in Sources */,
 				D9B2168D24AFC407006EDBAE /* AppDelegate.swift in Sources */,
 				D9B2168F24AFC407006EDBAE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9B216DC24B42C3B006EDBAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B216E324B42C3B006EDBAE /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9B216E624B42C3B006EDBAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9B216DF24B42C3B006EDBAE /* CustomKeys */;
+			targetProxy = D9B216E524B42C3B006EDBAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D9B2169224AFC407006EDBAE /* Main.storyboard */ = {
@@ -281,6 +390,7 @@
 		D9B2169E24AFC410006EDBAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHTC3WZ3S9;
@@ -299,6 +409,7 @@
 		D9B2169F24AFC410006EDBAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHTC3WZ3S9;
@@ -309,6 +420,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dm.DarkMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9B216E924B42C3B006EDBAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KHTC3WZ3S9;
+				INFOPLIST_FILE = CustomKeys/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dm.DarkMode.CustomKeys;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9B216EA24B42C3B006EDBAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KHTC3WZ3S9;
+				INFOPLIST_FILE = CustomKeys/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dm.DarkMode.CustomKeys;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,6 +480,15 @@
 			buildConfigurations = (
 				D9B2169E24AFC410006EDBAE /* Debug */,
 				D9B2169F24AFC410006EDBAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9B216E824B42C3B006EDBAE /* Build configuration list for PBXNativeTarget "CustomKeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9B216E924B42C3B006EDBAE /* Debug */,
+				D9B216EA24B42C3B006EDBAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lGk-uT-Lna">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yp7-c5-9Ay">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -16,9 +16,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWF-Tb-fT1">
-                                <rect key="frame" x="109.5" y="422.5" width="195" height="51"/>
+                                <rect key="frame" x="120.5" y="422.5" width="173" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Change Mode"/>
+                                <state key="normal" title="Button Color"/>
                                 <connections>
                                     <segue destination="tNm-YG-gYH" kind="show" id="jag-og-Atk"/>
                                 </connections>
@@ -48,8 +48,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRt-ep-PX6">
-                                <rect key="frame" x="131.5" y="428.5" width="151" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRt-ep-PX6">
+                                <rect key="frame" x="138" y="428.5" width="138" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -77,15 +77,83 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="lGk-uT-Lna" kind="relationship" relationship="viewControllers" id="zAx-KB-dVv"/>
+                        <segue destination="OoO-cT-MAv" kind="relationship" relationship="viewControllers" id="znT-eY-yYB"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wf2-HP-46a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-996" y="550"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Keyboard-->
+        <scene sceneID="csE-ss-rHY">
+            <objects>
+                <viewController id="OoO-cT-MAv" customClass="KeyboardVC" customModule="FeatureTesting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gf9-nM-ivo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EbZ-CR-J6U">
+                                <rect key="frame" x="8" y="64" width="398" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qdF-kF-CFi"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh9-dL-w5u">
+                                <rect key="frame" x="8" y="134" width="398" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="rfK-El-gbh"/>
+                                </constraints>
+                                <string key="text">Add keyboard in Setting&gt;General&gt;Keyboards. Cycle through keyboards with globe icon in the lower left corner of the keyboard screen.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Icons made by Freepik from www.flaticon.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MOC-da-WVQ">
+                                <rect key="frame" x="20" y="770" width="374" height="33"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="fnP-cI-9k7"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jh9-dL-w5u" firstAttribute="leading" secondItem="xwq-vq-ZbD" secondAttribute="leading" constant="8" id="36e-rY-4r6"/>
+                            <constraint firstItem="EbZ-CR-J6U" firstAttribute="leading" secondItem="xwq-vq-ZbD" secondAttribute="leading" constant="8" id="CL4-gI-5hG"/>
+                            <constraint firstItem="MOC-da-WVQ" firstAttribute="leading" secondItem="xwq-vq-ZbD" secondAttribute="leading" constant="20" id="G0k-vu-LnO"/>
+                            <constraint firstItem="EbZ-CR-J6U" firstAttribute="top" secondItem="xwq-vq-ZbD" secondAttribute="top" constant="20" id="SZS-D4-bz5"/>
+                            <constraint firstItem="EbZ-CR-J6U" firstAttribute="centerX" secondItem="Gf9-nM-ivo" secondAttribute="centerX" id="TrR-gA-INf"/>
+                            <constraint firstItem="xwq-vq-ZbD" firstAttribute="trailing" secondItem="EbZ-CR-J6U" secondAttribute="trailing" constant="8" id="UB4-kC-eAi"/>
+                            <constraint firstItem="xwq-vq-ZbD" firstAttribute="bottom" secondItem="MOC-da-WVQ" secondAttribute="bottom" constant="10" id="ZTD-pe-HCQ"/>
+                            <constraint firstItem="xwq-vq-ZbD" firstAttribute="trailing" secondItem="MOC-da-WVQ" secondAttribute="trailing" constant="20" id="f2H-Xb-SsN"/>
+                            <constraint firstItem="Jh9-dL-w5u" firstAttribute="top" secondItem="EbZ-CR-J6U" secondAttribute="bottom" constant="20" id="fDL-0a-TUT"/>
+                            <constraint firstItem="xwq-vq-ZbD" firstAttribute="trailing" secondItem="Jh9-dL-w5u" secondAttribute="trailing" constant="8" id="rjf-co-abA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xwq-vq-ZbD"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Keyboard" image="keyboard" catalog="system" id="xSF-L5-U0R"/>
+                    <connections>
+                        <outlet property="textField" destination="EbZ-CR-J6U" id="nUu-Cy-2aC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mGP-B8-HJO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="929.46428571428567"/>
+        </scene>
+        <!--Dark Mode-->
         <scene sceneID="2ea-dz-k2A">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lGk-uT-Lna" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dark Mode" image="moon.fill" catalog="system" id="s94-iy-bET"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k57-y2-mUX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -101,4 +169,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="keyboard" catalog="system" width="128" height="70"/>
+        <image name="moon.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
