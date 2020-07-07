@@ -16,14 +16,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D9B2168924AFC407006EDBAE /* DarkMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9B2168924AFC407006EDBAE /* FeatureTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B2168C24AFC407006EDBAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9B2168E24AFC407006EDBAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D9B2169024AFC407006EDBAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D9B2169324AFC407006EDBAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9B2169524AFC410006EDBAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9B2169824AFC410006EDBAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D9B2169A24AFC410006EDBAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +39,7 @@
 		D9B2168024AFC407006EDBAE = {
 			isa = PBXGroup;
 			children = (
-				D9B2168B24AFC407006EDBAE /* DarkMode */,
+				D9B2168B24AFC407006EDBAE /* FeatureTesting */,
 				D9B2168A24AFC407006EDBAE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +47,12 @@
 		D9B2168A24AFC407006EDBAE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9B2168924AFC407006EDBAE /* DarkMode.app */,
+				D9B2168924AFC407006EDBAE /* FeatureTesting.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D9B2168B24AFC407006EDBAE /* DarkMode */ = {
+		D9B2168B24AFC407006EDBAE /* FeatureTesting */ = {
 			isa = PBXGroup;
 			children = (
 				D9B2168C24AFC407006EDBAE /* AppDelegate.swift */,
@@ -62,17 +61,16 @@
 				D9B2169224AFC407006EDBAE /* Main.storyboard */,
 				D9B2169524AFC410006EDBAE /* Assets.xcassets */,
 				D9B2169724AFC410006EDBAE /* LaunchScreen.storyboard */,
-				D9B2169A24AFC410006EDBAE /* Info.plist */,
 			);
-			path = DarkMode;
+			path = FeatureTesting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D9B2168824AFC407006EDBAE /* DarkMode */ = {
+		D9B2168824AFC407006EDBAE /* FeatureTesting */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9B2169D24AFC410006EDBAE /* Build configuration list for PBXNativeTarget "DarkMode" */;
+			buildConfigurationList = D9B2169D24AFC410006EDBAE /* Build configuration list for PBXNativeTarget "FeatureTesting" */;
 			buildPhases = (
 				D9B2168524AFC407006EDBAE /* Sources */,
 				D9B2168624AFC407006EDBAE /* Frameworks */,
@@ -82,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = DarkMode;
+			name = FeatureTesting;
 			productName = DarkMode;
-			productReference = D9B2168924AFC407006EDBAE /* DarkMode.app */;
+			productReference = D9B2168924AFC407006EDBAE /* FeatureTesting.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D9B2168424AFC407006EDBAE /* Build configuration list for PBXProject "DarkMode" */;
+			buildConfigurationList = D9B2168424AFC407006EDBAE /* Build configuration list for PBXProject "FeatureTesting" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9B2168824AFC407006EDBAE /* DarkMode */,
+				D9B2168824AFC407006EDBAE /* FeatureTesting */,
 			);
 		};
 /* End PBXProject section */
@@ -286,7 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHTC3WZ3S9;
-				INFOPLIST_FILE = DarkMode/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FeatureTesting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHTC3WZ3S9;
-				INFOPLIST_FILE = DarkMode/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FeatureTesting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D9B2168424AFC407006EDBAE /* Build configuration list for PBXProject "DarkMode" */ = {
+		D9B2168424AFC407006EDBAE /* Build configuration list for PBXProject "FeatureTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9B2169B24AFC410006EDBAE /* Debug */,
@@ -328,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9B2169D24AFC410006EDBAE /* Build configuration list for PBXNativeTarget "DarkMode" */ = {
+		D9B2169D24AFC410006EDBAE /* Build configuration list for PBXNativeTarget "FeatureTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9B2169E24AFC410006EDBAE /* Debug */,
