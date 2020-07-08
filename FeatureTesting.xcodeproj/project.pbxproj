@@ -19,6 +19,7 @@
 		D9B216F124B446C4006EDBAE /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = D9B216EE24B446C4006EDBAE /* bear.png */; };
 		D9B216F224B446C4006EDBAE /* wolf.png in Resources */ = {isa = PBXBuildFile; fileRef = D9B216EF24B446C4006EDBAE /* wolf.png */; };
 		D9B216F324B446C4006EDBAE /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = D9B216F024B446C4006EDBAE /* pig.png */; };
+		D9B216F524B58D4E006EDBAE /* FaceIdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B216F424B58D4E006EDBAE /* FaceIdVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,11 +56,12 @@
 		D9B2169824AFC410006EDBAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9B216E024B42C3B006EDBAE /* CustomKeys.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomKeys.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B216E224B42C3B006EDBAE /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
-		D9B216E424B42C3B006EDBAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9B216E424B42C3B006EDBAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../CustomKeys/Info.plist; sourceTree = "<group>"; };
 		D9B216EC24B42C95006EDBAE /* KeyboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardVC.swift; sourceTree = "<group>"; };
 		D9B216EE24B446C4006EDBAE /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
 		D9B216EF24B446C4006EDBAE /* wolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wolf.png; sourceTree = "<group>"; };
 		D9B216F024B446C4006EDBAE /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig.png; sourceTree = "<group>"; };
+		D9B216F424B58D4E006EDBAE /* FaceIdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +106,12 @@
 				D9B2168C24AFC407006EDBAE /* AppDelegate.swift */,
 				D9B2168E24AFC407006EDBAE /* SceneDelegate.swift */,
 				D9B2169024AFC407006EDBAE /* ViewController.swift */,
-				D9B2169224AFC407006EDBAE /* Main.storyboard */,
-				D9B2169524AFC410006EDBAE /* Assets.xcassets */,
-				D9B2169724AFC410006EDBAE /* LaunchScreen.storyboard */,
 				D9B216EC24B42C95006EDBAE /* KeyboardVC.swift */,
+				D9B216F424B58D4E006EDBAE /* FaceIdVC.swift */,
+				D9B2169224AFC407006EDBAE /* Main.storyboard */,
+				D9B2169724AFC410006EDBAE /* LaunchScreen.storyboard */,
+				D9B2169524AFC410006EDBAE /* Assets.xcassets */,
+				D9B216E424B42C3B006EDBAE /* Info.plist */,
 			);
 			path = FeatureTesting;
 			sourceTree = "<group>";
@@ -119,7 +123,6 @@
 				D9B216F024B446C4006EDBAE /* pig.png */,
 				D9B216EF24B446C4006EDBAE /* wolf.png */,
 				D9B216E224B42C3B006EDBAE /* KeyboardViewController.swift */,
-				D9B216E424B42C3B006EDBAE /* Info.plist */,
 			);
 			path = CustomKeys;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				D9B2169124AFC407006EDBAE /* ViewController.swift in Sources */,
 				D9B216ED24B42C95006EDBAE /* KeyboardVC.swift in Sources */,
 				D9B2168D24AFC407006EDBAE /* AppDelegate.swift in Sources */,
+				D9B216F524B58D4E006EDBAE /* FaceIdVC.swift in Sources */,
 				D9B2168F24AFC407006EDBAE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

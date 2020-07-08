@@ -20,6 +20,8 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>For authentication in this app while using face or touch id</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>

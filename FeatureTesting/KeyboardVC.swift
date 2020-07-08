@@ -14,7 +14,14 @@ class KeyboardVC: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
-        //
+        // keyboard setup
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(gestureRecognizer)
+        
+    }
+    
+    @objc func hideKeyboard() {
+        view.endEditing(true)
     }
     
 }
